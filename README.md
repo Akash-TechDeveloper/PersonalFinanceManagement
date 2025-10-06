@@ -82,9 +82,6 @@ These image paths are taken directly from the repository and should render corre
 
   ![Goals Icon](./Personal%20Finance%20Management/Frontend/cashtrack/src/image/target.png)
 
-> ⚠️ If any image does not appear on GitHub, check that the file paths are exact and that the README lives at the repository root. Filenames and folder names are **case sensitive** on some platforms and web servers.
-
----
 
 ## Features
 
@@ -293,19 +290,6 @@ Include a Postman collection in `/docs` or export it and add a link to `docs/Pos
 
 You can expose a live link in the repository `About` section (top-right of the repo page) and in the README.
 
-**Steps (quick):**
-
-1. Deploy the **frontend** to Vercel (recommended for React/Vite):
-
-   * Connect GitHub → Import repo → Set Root Directory to `Personal Finance Management/Frontend/cashtrack` → Deploy.
-   * After deploy, copy the Vercel URL.
-2. Deploy the **backend** to Render / Railway / Heroku / Google Cloud Run:
-
-   * Create a new service, connect GitHub, pick the backend folder as the root, set build & run commands (Maven), set environment variables (DB, JWT), and deploy.
-3. In GitHub repo page, click the small **pencil icon** next to the repo description (top‑left under the repo name) and paste the **frontend live URL** into the `Website` field — this makes the link visible on the repo header.
-4. In README, update the **Live Demo** link to the frontend URL and the **API Base URL** to the backend URL.
-
-**Quick badges / examples**
 
 ```markdown
 [![Deploy Frontend on Vercel](https://img.shields.io/badge/deploy-vercel-black?logo=vercel)](https://vercel.com/new)
