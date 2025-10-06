@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+h1, p {
+  margin: 0;
+}
+
+/* Signup Container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f3f3;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.signup-interior {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 900px;
+  height: 500px; /* Same height as signin.css for consistency */
+}
+
+/* Login and Register Content */
+.login-content,
+.register-content {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Content (Sign In Panel) */
+.login-content {
+  background-color: #410200;
+  color: #fff;
+}
+
+.login-content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.login-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.login-content button {
+  width: 100%;
+  max-width: 400px; /* Same width as Sign Up button */
+  padding: 0.8rem;   /* Same padding as Sign Up button */
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.login-content button:hover {
+  background-color: #fff;
+  color: #410200;
+  border-color: #410200;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Register Content (Sign Up Panel) */
+.register-content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.register-content p {
+  margin-bottom: 1.5rem;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Input Field Consistency with signin.css */
+.register-content input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem; /* Matches the padding size in signin.css */
+  margin: 0.5rem 0; /* Consistent margin */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+
+/* Ensuring button size consistency */
+.register-content button {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem;
+  background-color: #410200;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.register-content button:hover {
+  background-color: #5c0505;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Password Strength Indicator */
+.password-strength {
+  margin: 0.5rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.password-strength.strong {
+  color: green;
+}
+
+.password-strength.moderate {
+  color: orange;
+}
+
+.password-strength.weak {
+  color: red;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Success Message */
+.result {
+  color: green;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-interior {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .login-content,
+  .register-content {
+    flex: none;
+    width: 100%;
+  }
+
+  .register-content input,
+  .register-content button {
+    max-width: 100%;
+  }
+
+  .login-content button {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .signup-interior {
+    padding: 1rem;
+  }
+
+  .register-content input,
+  .register-content button,
+  .login-content button {
+    max-width: 100%;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .signup-interior {
+    padding: 0.8rem;
+  }
+
+  .register-content input,
+  .register-content button,
+  .login-content button {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+h1, p {
+  margin: 0;
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f3f3;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.login-interior {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 900px;
+  height: 500px; /* Adjusted height for better proportions */
+}
+
+.signin-content,
+.signup-content {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sign In Content */
+.signin-content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.signin-content p {
+  margin-bottom: 1.5rem;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Input Field */
+.signin-content .input-field {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.signin-content .signin-button {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem;
+  background-color: #410200;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.signin-content .signin-button:hover {
+  background-color: #5c0505;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Password Container */
+.password-container {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+}
+
+.password-container input {
+  width: 100%;
+  padding: 0.8rem;
+  padding-right: 2.5rem; /* Add space for the eye icon */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.password-container .toggle-password:hover {
+  color: #000;
+}
+
+/* Sign Up Content */
+.signup-content {
+  background-color: #410200;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.signup-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.signup-content button {
+  width: 100%;
+  max-width: 300px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.signup-content button:hover {
+  background-color: #fff;
+  color: #410200;
+  border-color: #410200;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-interior {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .signin-content,
+  .signup-content {
+    flex: none;
+    width: 100%;
+  }
+
+  .signin-content .input-field,
+  .signin-content .signin-button,
+  .password-container input,
+  .signup-content button {
+    max-width: 100%; /* Remove width limit for smaller devices */
+  }
+}

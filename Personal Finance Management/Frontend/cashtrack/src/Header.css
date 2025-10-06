@@ -1,0 +1,163 @@
+/* Header Container */
+.header-container {
+    display: grid;
+    grid-template-columns: 20% 80%; /* Left for logo/name, right for content */
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 20px;
+}
+
+/* Company Name Section */
+.companyname {
+    display: flex;
+    align-items: center;
+    grid-column: 1/2;
+}
+
+.companyname img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.companyname h1 {
+    font-size: 2vw;
+    margin: 0;
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Menu Field Section */
+.menu-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 2/3;
+}
+
+/* User Info Section */
+.inside-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E8E9EB;
+    border-radius: 12px;
+    padding: 10px;
+    gap: 20px;
+    width: 90%; /* Ensure it adapts responsively */
+    max-width: 100%;
+    background: linear-gradient(to top left, #ffffff, #eaeaea, #dcdcdc);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.text h2 {
+    margin: 5px 0;
+    font-size: 1.5vw;
+    color: #000;
+}
+
+.text h4 {
+    margin: 0;
+    font-size: 1.2vw;
+    color: #666;
+}
+
+/* Notification Button */
+.tools {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.tools button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.tools img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        grid-template-columns: 30% 70%;
+        padding: 10px;
+    }
+
+    .companyname img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .companyname h1 {
+        font-size: 4vw;
+    }
+
+    .inside-container {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text h2 {
+        font-size: 2.5vw;
+    }
+
+    .text h4 {
+        font-size: 2vw;
+    }
+
+    .tools img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        grid-template-rows: 35% 65%;
+    }
+
+    .companyname img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .companyname h1 {
+        font-size: 5vw;
+    }
+
+    .inside-container {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .text h2 {
+        font-size: 3.5vw;
+    }
+
+    .text h4 {
+        font-size: 3vw;
+    }
+
+    .tools img {
+        width: 18px;
+        height: 18px;
+    }
+}

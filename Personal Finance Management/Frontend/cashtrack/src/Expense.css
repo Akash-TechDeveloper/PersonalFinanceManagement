@@ -1,0 +1,53 @@
+/* Main container styling */
+.expense-container {
+    width: 90%; /* Responsive width */
+    max-width: 1000px; /* Reduced maximum width for a smaller appearance */
+    margin: 0 auto; /* Center align the container */
+    padding: 20px; /* Slightly reduced padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9; /* Light background for better contrast */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Slightly smaller rounded corners */
+    overflow: hidden; /* Prevent content overflow */
+    box-sizing: border-box; /* Include padding and border in size calculations */
+  }
+  
+  /* Title styling */
+  .expense-container h1 {
+    font-size: 1.8rem; /* Slightly smaller title */
+    font-weight: 600; /* Bold for emphasis */
+    color: #333; /* Dark text color for contrast */
+    margin-bottom: 15px; /* Reduced spacing below the title */
+    text-align: center; /* Center-align title text */
+  }
+  
+  /* Bar chart styling */
+  .expense-container canvas {
+    width: 100%; /* Responsive width for the chart */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Small screen adjustments */
+  @media (max-width: 768px) {
+    .expense-container {
+      padding: 10px; /* Further reduced padding for smaller screens */
+    }
+  
+    .expense-container h1 {
+      font-size: 1.4rem; /* Smaller title font for medium screens */
+    }
+  }
+  
+  /* Extra small screen adjustments */
+  @media (max-width: 480px) {
+    .expense-container {
+      padding: 8px; /* Minimized padding for extra small screens */
+    }
+  
+    .expense-container h1 {
+      font-size: 1.2rem; /* Further reduced title font size */
+    }
+  }
+  
